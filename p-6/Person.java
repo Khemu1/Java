@@ -7,19 +7,18 @@ public class Person {
     String city;
 
     static int population;
-    public void salaryAfterTaxes() { // must be put in the constructor to work automatically
-        this.Salary = Salary-(Salary *taxes);
+    public float salaryAfterTaxes(float salary) { // must be put in the constructor to work automatically
+        return  Salary-(Salary *taxes);
     }
 
     Person()    {
         population++;
-        salaryAfterTaxes();
+
     }
     Person(String name,int age)    {
         population++;
         this.name=name;
         this.age=age;
-        salaryAfterTaxes();
     }
 
     public Person(String name, int age, String job, float salary, String city) {
@@ -29,7 +28,6 @@ public class Person {
         this.job = job;
         this.Salary = salary;
         this.city = city;
-        salaryAfterTaxes();
     }
 
     public  void printMaininfo() {
@@ -44,4 +42,5 @@ public class Person {
         System.out.println(city);
         System.out.println(Salary);
     }
+
 }
