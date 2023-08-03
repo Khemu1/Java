@@ -7,7 +7,7 @@ public class Person {
     String city;
 
     static int population;
-    public float salaryAfterTaxes(float salary) { // must be put in the constructor to work automatically
+    public float salaryAfterTaxes(float salary) {
         return  Salary-(Salary *taxes);
     }
 
